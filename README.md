@@ -5,6 +5,7 @@
 ![Docker](https://img.shields.io/badge/Containerized-Docker-2496ED?logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/Deployed%20on-AWS%20EC2-FF9900?logo=amazon-aws&logoColor=white)
 ![Mobile](https://img.shields.io/badge/Mobile%20Client-React%20Native-61DAFB?logo=react)
+![Web] (https://img.shields.io/badge/Web%20Client-React%20JS-61DAFB?logo=react)
 
 ---
 
