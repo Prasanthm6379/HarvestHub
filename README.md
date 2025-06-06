@@ -79,12 +79,11 @@ HarvestHub/
 ```bash
 curl --location 'http://localhost:5000/pred/suggest' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer <token>' \
 --data '{
-  "Soil_Type":"Clay",
-  "Nutrition_Value":35,
-  "Temperature":26,
-  "Humidity":70
+    "Soil_Type":"Clay",
+    "Nutrition_Value":35,
+    "Temperature":26,
+    "Humidity":70
 }'
 ```
 
@@ -110,32 +109,31 @@ curl --location 'http://localhost:5000/pred/suggest' \
 ```bash
 curl --location 'http://localhost:5000/pred/predict' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer <token>' \
 --data '{
-  "Soil_Characteristics":"Clay",
-  "Nutrition_Value":"High",
-  "Crop_Variety":"A",
-  "Pest_and_Diseases":"Moderate",
-  "Fertilizers":"asd",
-  "Fertilizer_Usage":"High",
-  "farm_size_acres":100,
-  "ph_level":6
+    "Soil_Characteristics":"Clay",
+    "Nutrition_Value":"High",
+    "Crop_Variety":"A",
+    "Pest_and_Diseases":"Moderate",
+    "Fertilizers":"asd",
+    "Fertilizer_Usage":"High",
+    "farm_size_acres":100,
+    "ph_level":6
 }'
 ```
 
 **Sample Response**:
 ```json
 {
-  "content": {
-    "model_metrics": {
-      "mae": 6.699999999999999,
-      "r2_score": 0.2590689320388352,
-      "rmse": 7.132830200324879
+    "content": {
+        "model_metrics": {
+            "mae": 1.5062800000000005,
+            "r2_score": "89.35%",
+            "rmse": 2.449508179206594
+        },
+        "predicted_yield_in_tons": 21.46
     },
-    "predicted_yield_in_tons": 37.55
-  },
-  "status": "Success",
-  "status_code": 200
+    "status": "Success",
+    "status_code": 200
 }
 ```
 
