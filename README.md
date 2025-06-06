@@ -131,7 +131,7 @@ curl --location 'http://localhost:5000/pred/predict' \
       "r2_score": 0.2590689320388352,
       "rmse": 7.132830200324879
     },
-    "predicted_yield": 37.55
+    "predicted_yield_in_tons": 37.55
   },
   "status": "Success",
   "status_code": 200
